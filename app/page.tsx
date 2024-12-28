@@ -132,7 +132,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-blue-800 text-white py-6">
+      <footer className="bg-gradient-to-r from-blue-900 to-green-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p>&copy; {new Date().getFullYear()} Association des Jeunes Innovateurs d&apos;Al-Khalidiya . Tous droits réservés.</p>
         </div>
