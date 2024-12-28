@@ -50,10 +50,10 @@ export default function PastActivities() {
         Retour
       </Link>
       <h1 className="text-3xl font-semibold text-blue-800 mb-6">Activités Passées</h1>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
         {sortedActivities.map((activity, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="relative h-64">
+            <div className="relative h-48 sm:h-64">
               <Image
                 src={activity.image}
                 alt={activity.title}
@@ -61,9 +61,9 @@ export default function PastActivities() {
                 className="object-cover"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-blue-600 mb-3">{activity.title}</h3>
-              <p className="text-gray-500 mt-2">
+            <div className="p-4 md:p-6">
+              <h3 className="text-lg md:text-xl font-semibold text-blue-600 mb-2 md:mb-3">{activity.title}</h3>
+              <p className="text-sm md:text-base text-gray-500 mt-2">
                 Date: {new Date(activity.date).toLocaleDateString('fr-FR', {
                   year: 'numeric',
                   month: 'long'
